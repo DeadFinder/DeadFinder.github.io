@@ -149,6 +149,9 @@ window.addEventListener("load", () => {
         }
         at("status_text").innerHTML = "click to enter";
         at("status_text").classList.add("begin");
+        myVid=document.getElementById("music");
+        myVid.volume=0.1;
+
 
     }, 100);
 });
