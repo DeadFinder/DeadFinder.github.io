@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url(/fonts/PermanentMarker-Regular.ttf)
+}
+
+html,
+body {
+    color: #fefefe
+}
+
+body {
+    margin: 0;
+    width: 100%
+}
+
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.background-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10
+}
+
+.inner-page .background-anim {
+    height: 1900px
+}
+
+.seller {
+    font-family: monospace;
+    color: rgb(68 56 102);
+
+    cursor: text;
+}
+
+.holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textiboi {
+	text-align: center;
+	color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.textiboi:hover {
+	color: rgb(255, 0, 0);
+}
+	
+
+.header {
+    text-align: center;
+	color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.hoverr:hover a 
+{
+	color: rgb(255, 0, 0);
+}
+
+.header:hover {
+    text-align: center;
+	color: rgb(255, 0, 0);
+    font-family: monospace;
+}
+
+.container:hover .seller {
+	color: rgb(255, 0, 0);
+}
+
+.container:hover a {
+	color: rgb(255, 0, 0);
+}
+
+.a {
+    text-align: center;
+	color: rgb(255, 0, 0);
+    font-family: monospace;
+}
+
+.header:hover a {
+    text-align: center;
+	color: rgb(255, 0, 0);
+    font-family: monospace;
+}
+
+.icon {
+	color: rgb(255, 255, 255);
+}
+
+.icon i {
+    font-size: 80px;
+}
+
+.container {
+    text-align: center;
+    margin: 5px 20px;
+
+    float: left;
+}
+
+a {
+	color: rgb(255, 255, 255);
+}
+
+.container:hover .icon {
+    color: var(--icon-color);
+    font-size: 20px;
+}
+
+.container:hover .seller {
+	color: rgb(255, 0, 0);
+}
+
+.container:hover a {
+	color: rgb(255, 0, 0);
+}
+
+html {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
