@@ -1361,9 +1361,9 @@ body{
     box-shadow:0 6px 25px rgba(194,15,33,.4)
 }
 .ui__card--third{
-    background:-webkit-gradient(linear,left bottom,left top,color-stop(50%,rgba(23,92,142,0)),color-stop(50%,rgba(23,92,142,.6))),url(../img/cards/xenforo.png) 45% center no-repeat;
-    background:-webkit-linear-gradient(bottom,rgba(23,92,142,0) 50%,rgba(23,92,142,.6)),url(../img/cards/xenforo.png) 45% center no-repeat;
-    background:linear-gradient(to top,rgba(23,92,142,0) 50%,rgba(23,92,142,.6)),url(../img/cards/xenforo.png) 45% center no-repeat;
+    background:-webkit-gradient(linear,left bottom,left top,color-stop(50%,rgba(23,92,142,0)),color-stop(50%,rgba(23,92,142,.6))),url(../img/cards/sot.png) 45% center no-repeat;
+    background:-webkit-linear-gradient(bottom,rgba(23,92,142,0) 50%,rgba(23,92,142,.6)),url(../img/cards/sot.png) 45% center no-repeat;
+    background:linear-gradient(to top,rgba(23,92,142,0) 50%,rgba(23,92,142,.6)),url(../img/cards/sot.png) 45% center no-repeat;
     background-size:cover
 }
 .ui__card--third:hover{
