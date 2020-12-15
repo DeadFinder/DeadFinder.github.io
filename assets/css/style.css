@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url(/fonts/PermanentMarker-Regular.ttf)
+}
+
+html,
+body {
+    color: #fefefe
+}
+
+body {
+    margin: 0;
+    width: 100%
+}
+
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.background-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10
+}
+
+.inner-page .background-anim {
+    height: 1900px
+}
 
 .seller {
     font-family: monospace;
@@ -22,19 +57,19 @@
 
 .textiboi {
 	text-align: center;
-	color: #444;
+	color: rgb(255, 255, 255);
     font-family: monospace;
     font-size: x-large;
 }
 
 .textiboi:hover {
-	color: white;
+	color: rgb(255, 0, 0);
 }
 	
 
 .header {
     text-align: center;
-    color: #444;
+	color: rgb(255, 255, 255);
     font-family: monospace;
     font-size: xx-large;
 }
@@ -45,37 +80,37 @@
 
 .hoverr:hover a 
 {
-	color: white;
+	color: rgb(255, 0, 0);
 }
 
 .header:hover {
     text-align: center;
-    color: white;
+	color: rgb(255, 0, 0);
     font-family: monospace;
 }
 
 .container:hover .seller {
-    color: white;
+	color: rgb(255, 0, 0);
 }
 
 .container:hover a {
-    color: white;
+	color: rgb(255, 0, 0);
 }
 
 .a {
     text-align: center;
-    color: white;
+	color: rgb(255, 0, 0);
     font-family: monospace;
 }
 
 .header:hover a {
     text-align: center;
-    color: white;
+	color: rgb(255, 0, 0);
     font-family: monospace;
 }
 
 .icon {
-    color: #444;
+	color: rgb(255, 255, 255);
 }
 
 .icon i {
@@ -90,7 +125,7 @@
 }
 
 a {
-    color: #444;
+	color: rgb(255, 255, 255);
 }
 
 .container:hover .icon {
@@ -99,9 +134,14 @@ a {
 }
 
 .container:hover .seller {
-    color: white;
+	color: rgb(255, 0, 0);
 }
 
 .container:hover a {
-    color: white;
+	color: rgb(255, 0, 0);
 }
+
+html {
+    overflow: hidden;
+}
+
