@@ -1,5 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^DeadFinder.github\.io$ [NC]
-RewriteCond %{HTTP_HOST} !^(.*)\.\.ru$ [NC]
-RewriteRule ^(.*)$ http://hugedomains\.com/$1 [R=410,L]
