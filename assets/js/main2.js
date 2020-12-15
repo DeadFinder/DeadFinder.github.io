@@ -91,7 +91,9 @@ function render() {
 
 function handleAnimations() {
     let animations = [
-          ["heartBeat", "heartBeat"],
+        ["fadeIn", "fadeIn"],
+        ["fadeInDown", "fadeInUp"],
+        ["fadeInLeft", "fadeInRight"],
     ];
 
     var num = getRandomInt(animations.length);
@@ -105,14 +107,7 @@ function handleAnimations() {
 function addStuff() {
     at("main").innerHTML =
     `<h1 name="top"    id = "status_text" class="header animated"><a href="https://vk.com/deadfinder">DeadFinder</a></h1>
-    <p  name="bottom" id = "text2" class="textiboi animated">I'm just goodless man :)</p>
-        <div class="textiboi">
-        <a id="typElement"></a></div>
-        <div class="textiboi">
-        <a class="textiboi animated fadeIn" href="https://ezcheats.ru/profile/DeadFinder/">EZcheats</a>
-        <a class="textiboi animated fadeIn" href="https://discord.gg/QdeeGDgQfT">My Discord server</a>
-        <a class="textiboi animated fadeIn" href="https://steamcommunity.com/id/deadfinder/">Steam</a>
-        <div class="textiboi">`
+    <p  name="bottom" id = "text2" class="header">I'm just goodless man :)</p>`
     handleAnimations();
 }
 
@@ -136,7 +131,7 @@ function getRandomInt(max) {
 }
 var at = document.getElementById.bind(document);
 window.addEventListener("DOMContentLoaded", () => {
-    at("status_text").innerHTML = "";
+    at("status_text").innerHTML = "loading";
 
 });
 
@@ -144,16 +139,42 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         if (!window.music.paused) {
             addStuff();
-            console.log("music is playing");
+            console.log("music already started");
             return;
         }
-        at("status_text").innerHTML = "click to enter";
+        at("status_text").innerHTML = "Click to get good";
         at("status_text").classList.add("begin");
         myVid=document.getElementById("music");
         myVid.volume=0.1;
-
 
     }, 100);
 });
 
 var temp = 0
+
+function animationOver() {
+    temp++;
+
+    if (temp != 2)
+        return;
+
+    setTimeout(function() {
+        console.log("animations over");
+        var doc = document.getElementById("main");
+        var inner = doc.innerHTML;
+        // WOW this is aids.
+
+        doc.innerHTML +=
+            `<div class="textiboi">
+        <a id="typElement"></a></div>
+        <div class="textiboi">
+        <a class="textiboi animated fadeIn" href="https://vk.com/deadfinder">VK</a>
+        <a class="textiboi animated fadeIn" href="https://ezcheats.ru/profile/DeadFinder/">EZcheats</a>
+        <a class="textiboi animated fadeIn" href="https://steamcommunity.com/id/deadfinder/">Steam</a>
+        <div class="textiboi">
+        <a class="textiboi animated fadeIn" href="https://discord.gg/QdeeGDgQfT">Discord server</a>`;
+
+    }, 550);
+
+}
+
