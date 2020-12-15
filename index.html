@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DeadFinder</title>
+  <link rel="stylesheet" href="test/protected/css/all.css">
+  <link rel="stylesheet" href="test/protected/css/animate.css">
+</head>
+<body>
+
+
+
+  <canvas class="background-anim" width="1206" height="371"></canvas>
+  <link rel="stylesheet" href="test/protected/css/style.min.css">
+  <script src="test/protected/js/background.min.js"></script>
+  <script>
+    document.oncontextmenu = cmenu;
+    function cmenu() {
+      return false;
+    }
+  </script>
+
+
+
+<audio id="music" src="msc2.mp3" autoplay="" loop="" onplaying="" style="display: none;">
+</audio>
+<div id="main" class="center">
+<div id="overlay" onclick="music.play(); addStuff();">
+<span class="header center begin" id="status_text">click to get good</span></div>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="test/protected/js/shit.js"></script>
+<script src="test/protected/js/title.js"></script>
+</div>
+
+</body>
+
+</html>
