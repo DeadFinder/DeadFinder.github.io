@@ -1267,7 +1267,6 @@ body{
     -ms-flex-direction:column;
     flex-direction:column;
     height:100px;
-    min-height:920px
 }
 .container{
     width:1200px;
