@@ -2000,8 +2000,12 @@ body{
     align-items:center
 }
 .footer--flex{
-    height:auto;
-    min-height:72px
+	position: absolute;
+   /*  height:100px;
+   min-height:0px;*/
+    top:1px;
+    left:0px;
+    right:500px;
 }
 .footer__link{
     display:block;
@@ -2363,3 +2367,4 @@ body{
     }
 }
 html { overflow: hidden; }
+ 
