@@ -484,7 +484,7 @@ body{
     -webkit-box-shadow:0 6px 25px rgba(23,92,142,.4);
     box-shadow:0 6px 25px rgba(23,92,142,.4)
 }
-/*.ui__card--fourth{
+.ui__card--fourth{
     background:-webkit-gradient(linear,left bottom,left top,color-stop(50%,rgba(0,66,174,0)),color-stop(50%,rgba(57,62,74,.6))),url(../img/cards/arizona_parser.png) 45% center no-repeat;
     background:-webkit-linear-gradient(bottom,rgba(0,66,174,0) 50%,rgba(57,62,74,.6)),url(../img/cards/arizona_parser.png) 45% center no-repeat;
     background:linear-gradient(to top,rgba(0,66,174,0) 50%,rgba(57,62,74,.6)),url(../img/cards/arizona_parser.png) 45% center no-repeat;
@@ -492,7 +492,7 @@ body{
 }
 .ui__card--fourth:hover{
     -webkit-box-shadow:0 6px 25px rgba(57,62,74,.4);
-    box-shadow:0 6px 25px rgba(57,62,74,.4) */
+    box-shadow:0 6px 25px rgba(57,62,74,.4) 
 }
 
 .social-link{
